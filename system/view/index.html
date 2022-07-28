@@ -1,0 +1,59 @@
+---
+$title
+$description
+$path
+---
+
+<div class="row">
+  <div class="col-sm-6 col-md-7 col-lg-8" style="height:inherit">
+    <div class="preview">
+      <div id="coverprint"></div>
+      <div id="loading"><div><img src="{{$path}}images/loading.gif"></div></div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-5 col-lg-4 text-center" id="generator">
+    <h1>{{$title}}</h1>
+    <h2>{{$description}}</h2>
+    <div class="steps"><img src="{{$path}}images/steps.png"></div>
+    <form role="form" action="kxgen" id="kxgenForm" method="post">
+      <div class="textareaBed">
+        <div id="placeholder" style="display:block;">請輸入文字，例如：朕知道了</div>
+        <textarea  name="usertext" class="form-control typingDemo" id="usertext" placeholder=""></textarea>
+      </div>
+      <div class="bgSelector">
+        <div class="bgItem default"><input type="radio" value="default" class="styleOption" name="userOption" id="optionDefault" checked></div>
+        <div class="bgItem gray"><input type="radio" value="gray" class="styleOption" name="userOption" id="optionGray"></div>
+        <div class="bgItem red"><input type="radio" value="red" class="styleOption" name="userOption" id="optionRed"></div>
+        <div class="bgItem blue"><input type="radio" value="blue" class="styleOption" name="userOption" id="optionBlue"></div>
+        <div class="bgItem fly"><input type="radio" value="fly" class="styleOption" name="userOption" id="optionFly"></div>
+        <div class="bgItem ching"><input type="radio" value="ching" class="styleOption" name="userOption" id="optionChing"></div>
+        <div class="bgItem black"><input type="radio" value="black" class="styleOption" name="userOption" id="optionBlack"></div>
+
+        <div class="bgItem santa"><input type="radio" value="santa" class="styleOption" name="userOption" id="optionSanta"></div>
+        <div class="bgItem wood"><input type="radio" value="wood" class="styleOption" name="userOption" id="optionWood"></div>
+        <div class="bgItem yellow checked"><input type="radio" value="yellow" class="styleOption" name="userOption" id="optionYellow"></div>
+        <div class="bgItem bluebg"><input type="radio" value="bluebg" class="styleOption" name="userOption" id="optionBluebg"></div>
+        <div class="bgItem spring"><input type="radio" value="spring" class="styleOption" name="userOption" id="optionSpring"></div>
+      </div>
+      <div class="sizeSelector" style="display:block">
+        <div class="sizeItem default"><input type="radio" value="default" class="sizeOption" name="sizeOption" id="sizeDefault" checked></div>
+        <div class="sizeItem bigger"><input type="radio" value="bigger" class="sizeOption" name="sizeOption" id="sizeBigger"></div>
+        <div class="sizeItem great checked"><input type="radio" value="great" class="sizeOption" name="sizeOption" id="sizeGreat"></div>
+        <div class="sizeItem omg"><input type="radio" value="omg" class="sizeOption" name="sizeOption" id="sizeOmg"></div>
+      </div>
+      <label class="checkbox" style="display:none;">
+        <input type="checkbox" value="1" name="vertical" id="vertical" /><span class='check'></span>直書
+      </label>
+      <label class="checkbox" style="display:none;">
+        <input type="checkbox" value="1" name="shadow" id="shadow" /><span class='check'></span>要陰影
+      </label>
+      <div class="clear"></div>
+      <input type="hidden" value="yellow" name="styleandform" id="styleandform">
+      <input type="hidden" value="great" name="sizeandform" id="sizeandform">
+      <input type="hidden" value="" name="directpost" id="directpost">
+      <input type="button" id="kxgenSubmit" class="btnSubmit">
+      <!-- <input type="button" id="facebookSubmit" class="fbSubmit"> -->
+    </form>
+  </div>
+</div>
+<div id="show"><i class="glyphicon glyphicon-eye-open"></i></div>

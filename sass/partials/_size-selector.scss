@@ -1,0 +1,47 @@
+.sizeSelector {
+  margin-top:10px;
+  margin-bottom:20px;
+
+  .sizeItem {
+    display:inline-block;
+    background-position: center center;
+    cursor: pointer;
+    outline: 5px solid #e0e0e0;
+    margin: 0 6px;
+    opacity: .6;
+    vertical-align: middle;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 16px;
+
+    input {
+      display:none;
+    }
+    &:hover {
+      -moz-opacity: 1.0;
+      opacity: 1.0;
+    }
+    &.checked {
+      outline: 5px solid #3CC;
+      /*outline: 5px solid #777;*/
+      -moz-opacity: 1.0;
+      opacity: 1.0;
+    }
+    &.default {
+      width:36px;
+      background:#e0e0e0 url(../images/sizeselect/sizeselect1.png) no-repeat;
+    }
+    &.bigger {
+      width:47px;
+      background:#e0e0e0 url(../images/sizeselect/sizeselect2.png) no-repeat;
+    }
+    &.great {
+      width:59px;
+      background:#e0e0e0 url(../images/sizeselect/sizeselect3.png) no-repeat;
+    }
+    &.omg {
+      width:121px;
+      background:#e0e0e0 url(../images/sizeselect/sizeselect4.png) no-repeat;
+    }
+  }
+}

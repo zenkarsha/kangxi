@@ -1,0 +1,65 @@
+.bgSelector {
+  margin: 0 auto;
+  margin-top:15px;
+  max-width: 400px;
+
+  .bgItem {
+    display: inline-block;
+    width:30px;
+    height:30px;
+    background-position: center center;
+    cursor: pointer;
+    outline: 5px solid #e0e0e0;
+    margin: 0 6px;
+    margin-bottom: 10px;
+    -moz-opacity: 0.60;
+    opacity: 0.60;
+
+    input {
+      display:none;
+    }
+    &:hover {
+      opacity: 1.0;
+    }
+    &.checked {
+      outline: 5px solid #3CC;
+      opacity: 1.0;
+    }
+    &.default {
+      background:url(../images/bgselect/bgselect1.png) no-repeat;
+    }
+    &.gray {
+      background:url(../images/bgselect/bgselect2.png) no-repeat;
+    }
+    &.red {
+      background:url(../images/bgselect/bgselect3.png) no-repeat;
+    }
+    &.ching {
+      background:url(../images/bgselect/ching.png) no-repeat;
+    }
+    &.black {
+      background:url(../images/bgselect/bgselect4.png) no-repeat;
+    }
+    &.santa {
+      background:url(../images/bgselect/santa.png) no-repeat;
+    }
+    &.fly {
+      background:url(../images/bgselect/bgfly.png) no-repeat;
+    }
+    &.spring {
+      background:url(../images/bgselect/bgspring.png) no-repeat;
+    }
+    &.wood {
+      background:url(../images/bgselect/bgwood.png) no-repeat;
+    }
+    &.blue {
+      background:url(../images/bgselect/blue.png) no-repeat;
+    }
+    &.bluebg {
+      background:url(../images/bgselect/bgblue.png) no-repeat;
+    }
+    &.yellow {
+      background:url(../images/bgselect/bgyellow.png) no-repeat;
+    }
+  }
+}
