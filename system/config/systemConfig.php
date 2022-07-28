@@ -10,7 +10,7 @@ $config = array
     'title' => '康熙字典體產生器',
     'description' => '康熙字典體於此，就是要你知道：天下萬萬字體，朕賜給你的，才是你的，朕不給，你自己來想辦法。',
     'copyright' => 'just for fun',
-    'shortcut-icon' => 'http://classic.unlink.men/images/favicon.ico',
+    'shortcut-icon' => 'http://kangxi.unlink.men/images/favicon.ico',
     'apple-touch-icon' => ''
   ),
   'setting' => array(
